@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: flex-start;
+    position: relative;
+    padding: 20px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.first{
+    background-image: url("first.gif");
+}
+.second{
+    background-image: url("second.gif");
+}
+.third{
+    background-image: url("third.gif");
+}
+h1{
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 100px;
+}
+
+p{
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+html, body{
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.btn1{
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+
+    padding: 12px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transform: translateX(50%);
+
+}
+
+.btn2-container{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(50%);
+    display: flex;
+    gap: 20px;
+}
+
+.btn-yes, .btn-no{
+    font-family: 'Indie Flower', cursive;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* YES button (same look as before) */
+.btn-yes{
+    background:white;
+    color: #b9fb12;
+}
+
+/* NO button (same style but different feel optional) */
+.btn-no{
+    background: black;
+    color: #b9fb12;
+}
+
+.btn-message{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: 600;
+
+    padding: 12px 18px;
+    border-radius: 10px;
+    display: flex;
+
+    background: black;
+    color: white;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+
+.btn-message:hover{
+    transform: scale(1.05);
+    background: #222;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+        .btn1, .btn-yes, .btn-no {
+            font-size: 18px;
+            padding: 10px 16px;
+        }
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    background-attachment: scroll;
+}
+
+@media (max-width: 768px) {
+    section{
+        background-position: center top;
+    }
+}
+
+@media (max-width: 768px) {
+    .first {
+        background-image: url("first.2.gif");
+    }
+        .second {
+            background-image: url("second.2.gif");
+        }
+        .third {
+            background-image: url("third.2.gif");
+        }
+}

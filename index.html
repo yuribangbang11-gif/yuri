@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>picassoespresso</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <!-- First Page -->
+        <section class="first">
+            <h1>Hey!</h1>
+            <p>
+                Uhh...so I. Um. I. I wanted to ask you something but I don't even know how to ask you. I have thought of<br>
+                all the ways to ask you, when to ask you, and how to ask you and this is, I guess, the best way because I<br>
+                am too shy to say it directly. I know, I know ! It is kinda childish. I just don't want you to feel pressured<br>
+                and uncomfortable. I hope this would at least make your day(um or break it ? haha hope not). I know you're on<br>
+                hibernation and idek if you'd respond or even see this, me apologize for bothering you and taking much of your<br>
+                time. But pardon this foolish kid for it has never learned, as humans call it, "nonchalance". Raghhhhhhhhhh gawd.<br>
+                I shall explain myself if you shall ask for it, but first! Gimme a boop<br>
+            </p>
+             
+            <!--scroll button-->
+             <a href="#next" class="btn1">boop here</a>
+
+        </section>
+
+        <!-- Second Page -->
+        <section class="second" id="next">
+            <h1><br>uhhh</h1>
+
+        <p>
+            I <mark>accidentally🙄</mark> bought two tickets to IV of Spades concert anddd I was<br>
+            wondering if you want to come with me and use the extra ticket that I <mark>accidentally🙄</mark> bought.<br>
+            If you're worried about the crowd, me will stick with you the whole time. Whops! If you're worried about<br>
+            what time it finishes, I will take you home and watch you with my own two eyes get home safely. If you're<br>
+            worried about me being the person you're with, I'm worried too HAHAHAHAHA. I just want to go with you. I<br>
+            just want to spend time with you. I just want to be with you. Not in a weird way. In the most sincere, most<br>
+            genuine, most pure, and gayest way possible. But I will not force you if you don't want to come hehe.<br>
+
+        </p>
+
+        <div class="btn2-container">
+            <a href="#btn" class="btn-yes">yes</a>
+            <a href="#" class="btn-no">no</a>
+        </div>
+
+        </section>
+
+        <!-- Third Page sb-->
+        <section class="third" id="btn">
+            <h1>so...</h1>
+
+        <p>
+            If by chance you did press yes, hehehehe. Hihi. Okay wooh! Verily, I thank thee most graciously for accepting<br>
+            the invitation of this rather foolish soul, who hath found herself quite undone by thy presence. For I<br>
+            confess—indeed, I can no longer conceal it—my heart doth betray me far too easily in thy company. What once I<br>
+            endeavored to keep hidden hath now become most difficult to disguise, for even silence seemeth to speak on my<br>
+            behalf. Nevertheless, I shall look forward—quietly, and with due restraint—to our forthcoming meeting, which I<br>
+            shall leave undescribed, lest certainty spoil what ambiguity so politely preserves. Thank you my Ms. Avoidant : >
+
+        </p>
+
+        <a href="https://m.me/martheena.tamor.5" target="_blank" class="btn btn-message">special boop</a>
+
+        </section>
+
+            <div class="space"></div>
+
+    </body>
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    // YES BUTTON 
+    document.querySelector(".btn-yes").addEventListener("click", function (e) {
+        e.preventDefault();
+
+        confetti({
+            particleCount: 200,
+            spread: 150,
+            startVelocity: 40,
+            origin: { y: 0.6 }
+        });
+
+        setTimeout(() => {
+            window.location.hash = "btn"; // go to page 3
+        }, 100);
+    });
+
+    // NO BUTTON (fake error effect)
+    document.querySelector(".btn-no").addEventListener("click", function (e) {
+        e.preventDefault();
+
+        document.body.innerHTML = `
+        <div style="
+            background: #f2f2f2;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        ">
+            <div style="text-align: left; max-width: 600px;">
+                
+                <ul style="font: Arial, sans-serif; font-size: 22px; color: #202124;">
+                    This site can’t be reached
+                </ul>
+
+                <ul style="font: Arial, sans-serif; font-size: 14px; color: #5f6368;">
+                    picassoespresso.com refused to connect.
+                </ul>
+
+                <hr style="margin: 20px 0;">
+
+                <ul style="font: Arial, sans-serif; font-size: 14px; color: #5f6368;">
+                    Try:
+                </ul>
+
+                <ul style="font: Arial, sans-serif; font-size: 14px; color: #5f6368;">
+                    <li>Checking the connection</li>
+                    <li>Checking the proxy and the firewall</li>
+                    <li>ERR_CONNECTION_REFUSED</li>
+                </ul>
+
+            </div>
+        </div>
+        `;
+    });
+
+});
+</script>
+</html>
